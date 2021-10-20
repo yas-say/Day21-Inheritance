@@ -1,22 +1,41 @@
-class Animal:
+# class Animal:
+#     def __init__(self):
+#         self.eyes = 2
+#     def can_breathe(self):
+#         print("Inhale, Exhale")
+#
+#
+# class Fish(Animal):
+#     def __init__(self):
+#         super().__init__()
+#     def can_swim(self):
+#         print("Can swim")
+#     def can_breathe(self):
+#         super().can_breathe()
+#         print("Underwater too")
+#
+#
+# fish = Fish()
+# fish.can_swim()
+# fish.can_breathe()
+
+
+class Dog:
     def __init__(self):
-        self.eyes = 2
-    def can_breathe(self):
-        print("Inhale, Exhale")
+        self.temparament = "Gentle"
 
+    def bark(self):
+        print("DOG CLASS")
 
-class Fish(Animal):
+class Labrador(Dog):
     def __init__(self):
         super().__init__()
-    def can_swim(self):
-        print("Can swim")
-    def can_breathe(self):
-        super().can_breathe()
-        print("Underwater too")
+        self.temparament = "Cute"
 
+    def bark(self):
+        super().bark()
+        print("From labrador")
 
-fish = Fish()
-fish.can_swim()
-fish.can_breathe()
-
-
+s = Labrador()
+s.bark()
+print(s.temparament)
